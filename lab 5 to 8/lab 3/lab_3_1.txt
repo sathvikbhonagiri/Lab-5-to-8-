@@ -1,0 +1,16 @@
+/*Name:Bhonagiri sathvik, roll no:20311A1250
+ class:IT(F1) */
+#include<stdio.h>
+void main()
+{
+int n,r,i=0;
+printf("Enter the number : ");
+scanf("%d",&n);
+printf("Enter Upto Which Range U Want :");
+scanf("%d",&r);
+while(i<=r)
+{
+printf(" %d X %d = %d \n",n,i,n*i);
+i=i+1;
+ }
+}

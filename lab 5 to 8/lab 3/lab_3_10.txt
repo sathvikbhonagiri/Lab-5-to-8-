@@ -1,0 +1,18 @@
+/*Name:Bhonagiri sathvik, roll no:20311A1250
+ class:IT(F1) */
+#include<stdio.h>
+void main()
+{
+int num,i,int a[8];
+printf("Enter the  Number :");
+scanf("%d",&num);
+printf(" The Octal Number is : %o\n",dec);
+printf(" The Hexadecimal Number is : %x\n",dec);
+for(i=0;num>0;i++)
+{a[i]=num%2;
+ num=num/2;
+}
+printf(" The binary Number is : %x\n",dec);
+for(i=0;num>0;i++)
+printf("%d\t",a[i]);
+}
