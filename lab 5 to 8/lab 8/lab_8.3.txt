@@ -1,0 +1,30 @@
+/*Name:Bhonagiri sathvik, roll no:20311A1250
+ class:IT(F1) */
+#include<stdio.h>
+void main()
+{ int i,max,max1,j;
+  struct record
+         { char statename[30];
+            int population;
+            int literacy_rate;
+            int income;
+          }state[30];
+printf("enter the details of the state:\n");
+ for(i=0;i<30;i++)
+ { scanf("%s%d%d%d",state[i].statename,&state[i].population,&state[il.iteracy_rate,&state[i].income);
+    }
+max=state[0].income;
+for(i=0;i<30;i++)
+{if(state[i].income > max)
+ { max=state[i].income;
+  j=i;}
+}
+ printf("the high income state is %s\n",state[j].statename);
+max1=state[0].literacy_rate;
+for(i=0;i<30;i++)
+{if(state[i].literacy_rate> max1)
+ { max1=state[i].literacy_rate;
+  j=i;}
+}
+ printf("the high literacy rate state is %s\n",state[j].statename);
+}

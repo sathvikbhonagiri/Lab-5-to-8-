@@ -1,0 +1,34 @@
+/*Name:Bhonagiri sathvik, roll no:20311A1250
+ class:IT(F1) */
+#include<stdio.h>
+typedef struct  {
+         float  re;
+         float  im;
+}complex;
+void  add(complex * x, complex * y, complex * t)
+{
+     t->re = x->re + y->re ;
+     t->im = x->im + y->im ;
+}
+
+void  sub(complex * x, complex * y, complex * t)   {
+     t->re = x->re - y->re ;
+     t->im = x->im - y->im ;
+}
+void  multiply(complex * x, complex * y, complex * t)   {
+     t->re = ((x->re)*(y->re))-((x->im)*(y->im));
+     t->im =((x->re)*(y->im)+(x->im)*(y->re));
+}
+void main()
+{
+    complex  a, b, c;
+    printf("enter complex numbers\n");
+    scanf  ("%f %f", &a.re, &a.im);
+    scanf  ("%f %f", &b.re, &b.im);
+    add (&a, &b, &c) ;
+    printf("\n addition: %f %f", c.re, c.im);
+    sub(&a, &b, &c);
+    printf("\nsub: %f %f", c.re, c.im);
+    multiply(&a, &b, &c);
+    printf("\nmultiplication:%f %f", c.re, c.im);
+}

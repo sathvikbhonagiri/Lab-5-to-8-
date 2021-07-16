@@ -1,0 +1,14 @@
+/*Name:Bhonagiri sathvik, roll no:20311A1250
+ class:IT(F1) */
+#include <stdio.h>
+int main()
+{
+	int i = 16;
+	int *p = &i;
+	int**pp;
+
+	pp = &p;
+	printf("%i\n", **pp); 
+
+	return 0;
+}

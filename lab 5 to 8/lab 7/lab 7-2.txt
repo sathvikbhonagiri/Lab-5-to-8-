@@ -1,0 +1,18 @@
+/*Name:Bhonagiri sathvik, roll no:20311A1250
+ class:IT(F1) */
+#include <stdio.h>
+void area_circum(int r,float*a,float*c)
+{ *a=3.14*r*r;
+   *c=2*3.14*r;
+    printf("area is %f\n",*a);
+  printf("circumference is %f",*c);
+}
+
+int main()
+{   int radius;
+    float area,circumference;
+    printf("enter radius\n");
+    scanf("%d",&radius);
+    area_circum(radius,&area,&circumference);
+    return 0;
+}

@@ -1,0 +1,13 @@
+/*Name:Bhonagiri sathvik, roll no:20311A1250
+ class:IT(F1) */
+#include<stdio.h>
+void hello()
+{printf("hello every one\n");}
+void greeting(void*(greet()))
+{ greet();
+}
+void main()
+{
+  void(*greet)();
+  greeting(hello);
+} 

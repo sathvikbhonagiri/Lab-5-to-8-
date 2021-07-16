@@ -1,0 +1,14 @@
+/*Name:Bhonagiri sathvik, roll no:20311A1250
+ class:IT(F1) */
+#include <stdio.h>
+
+int main()
+{  int i,j;
+   int array[3][3]={{3,2},{4,5}};
+   int*a=array;
+    for(i=0;i<2;i++)
+    {for(j=0;j<2;j++)
+        printf("%d\n",*(a+i*3+j));}
+
+    return 0;
+}

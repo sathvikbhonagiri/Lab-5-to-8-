@@ -1,0 +1,26 @@
+/*Name:Bhonagiri sathvik, roll no:20311A1250
+ class:IT(F1) */
+#include <stdio.h>
+void reverseArray(char* arr[], int n)
+{
+    char* temp;
+    int j = n - 1;
+    for (int i = 0; i < j; i++) {
+        temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        j--;
+    }
+}
+  
+int main()
+{   int n=0;
+    int i=0;
+    char*arr[]={"sathvik","bhonagiri"};
+    for(i=0;arr[i]!='\0';i++)
+        n++;
+    reverseArray(arr,n);
+   for(i = 0; i<n; i++) 
+        printf("%s ", arr[i]);
+        return 0;
+}

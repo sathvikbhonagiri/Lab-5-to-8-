@@ -1,0 +1,105 @@
+/*Name:Bhonagiri sathvik, roll no:20311A1250
+ class:IT(F1) */
+#include<stdio.h>
+void issymetric(int matrix[3][3],int m,int n)
+{ int c,d,symetric=0,transpose[3][3];
+    if(m==n)
+    {
+   for(c = 0; c < m; c++)
+        for(d = 0; d < n; d++)
+         transpose[d][c]=matrix[c][d];
+     }
+    for(c = 0; c < m; c++)
+        for(d = 0; d < n; d++)
+           {if(matrix[c][d]!=transpose[c][d])
+              symetric++;}
+ if(symetric!=0)
+ printf("it is not symmetric\n");
+ else
+    printf("it is symmetric\n");
+}  
+int lower(int matrix[3][3],int m,int n)
+{int c,d;
+for(c = 0; c<m; c++)
+{for(d = 0; d<n; d++)
+{ if(d>c)
+    if(matrix[c][d]!=0)
+       return 0;
+ }
+
+  }
+return 1;
+}
+int upper(int matrix[3][3],int m,int n)
+{ int c,d;
+   for(c = 0; c<m; c++)
+   {for(d = 0; d<n; d++)
+      { if(c>d)
+         {if(matrix[c][d]!=0)
+           return 0;
+         }
+      }
+    }
+   return 1;
+}
+int diagonal(int matrix[3][3],int m,int n)
+{ int c,d;
+   for(c = 0; c<m; c++)
+   {for(d = 0; d<n; d++)
+      { if(c!=d)
+         {if(matrix[c][d]!=0)
+           return 0;
+         }
+      }
+    }
+   return 1;
+}
+int unit(int matrix[3][3],int m,int n)
+{ int c,d;
+   for(c = 0; c<m; c++)
+   {for(d = 0; d<n; d++)
+      { if(c!=d)
+         {if(matrix[c][d]!=0)
+           return 0;
+          
+         }
+         if(c==d)
+         {if(matrix[c][d]!=1)
+           return 0;}
+      }
+    }
+    
+   return 1;
+}
+void main()
+{
+    int n, m, c,d,f,g,h,i,a[3][3];
+    printf("\nEnter the number of rows and columns of the matrix \n\n");
+    scanf("%d%d", &m, &n);
+    printf("\nEnter the %d elements of the  matrix \n\n", m*n);
+    for(c = 0; c < m; c++)   
+        for(d = 0; d < n; d++)   
+            scanf("%d", &a[c][d]);
+           issymetric(a,m,n);
+          f=lower(a,m,n);
+           g=upper(a,m,n);
+           h=diagonal(a,m,n);
+           i=unit(a,m,n);
+ if(f==1)
+   printf("\nlower triangular");
+else 
+   printf("\n not lower triangular");
+ if(g==1)
+   printf("\nupper triangular");
+else 
+   printf("\n not upper triangular");
+if(h==1)
+   printf("\n diagonal ");
+else 
+   printf("\n not diagonal");
+if(i==1)
+  printf("\n unitary");
+else
+   printf("\n not unitary");
+}
+ 

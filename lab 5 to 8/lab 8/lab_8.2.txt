@@ -1,0 +1,21 @@
+/*Name:Bhonagiri sathvik, roll no:20311A1250
+ class:IT(F1) */
+#include<stdio.h>
+void main()
+{ int i;
+ struct details 
+      {
+         char name[100};
+          int basic_pay;
+          int DA=(52.0/100)*basic_pay;
+          int gross_salary=basic_pay+DA
+       }employee[100];
+printf("enter employee name & basic pay\n");
+for(i=0;i<100;i++)
+{scanf("%s%d",employee[i].name,&basicpay);}
+printf("the employee name & gross salary are:");
+for(i=0;i<100;i++)
+{printf("%s",employee[i].name);
+ printf("%d",employee[i].gross_salary)
+  }
+}

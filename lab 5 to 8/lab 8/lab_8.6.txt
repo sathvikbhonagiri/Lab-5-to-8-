@@ -1,0 +1,18 @@
+/*Name:Bhonagiri sathvik, roll no:20311A1250
+ class:IT(F1) */
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+  union point
+        { int x;
+          int y;
+        }p1;
+printf("enter the x cordinates of point\n");
+scanf("%d",&p1.x);
+printf("%d is the value of p1.x\n",p1.x);
+printf("enter the y cordinates of point\n"); 
+scanf("%d",&p1.y);
+printf("%d is the value of p1.y\n",p1.y); 
+printf("%d is the changed value of p1.x\n",p1.x);\\because they share same space
+}

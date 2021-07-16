@@ -1,0 +1,29 @@
+/*Name:Bhonagiri sathvik, roll no:20311A1250
+ class:IT(F1) */
+#include<stdio.h>
+void main()
+{ int i,no_of_students_1=0,no_students_2=0,sum1=0,sum2=0;
+  int avg1,avg2;
+  struct data
+         {char name[20];
+          char section; /*only two sections A or B*/
+           int class;
+           int marks;
+          }student[10];
+printf("enter the data :");
+for(i=0;i<10;i++)
+scanf("%s%c%d%d",student[i].name,&student[i].section,&student[i].class,&student[i].marks);
+for(i=0;i<10;i++)
+{if(student[i].section==A)
+ {sum1=sum1+student[i].marks;
+   no_students_1=no_students_1+1;
+  }
+ else if(student[i].section==B)
+ {sum2=sum2+student[i].marks;
+   no_students_2=no_students_2+1;
+ }
+}
+avg1=sum1/no_of_students_1;
+printf("the avg of 1 st section is %d\n",avg1);
+avg2=sum2/no_of_students_2;
+printf("the avg of  2nd section is %d",avg2);

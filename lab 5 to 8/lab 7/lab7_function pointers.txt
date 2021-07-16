@@ -1,0 +1,11 @@
+/*Name:Bhonagiri sathvik, roll no:20311A1250
+ class:IT(F1) */
+#include<stdio.h>
+int add(int a,int b)
+{return a+b;}
+void main()
+{int(*addition)(int,int);
+  addition=&add;
+ int result=(*addition)(4,5);
+ printf("%d",result);
+}

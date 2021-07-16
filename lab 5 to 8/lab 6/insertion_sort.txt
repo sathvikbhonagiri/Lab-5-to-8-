@@ -1,0 +1,35 @@
+/*Name:Bhonagiri sathvik, roll no:20311A1250
+ class:IT(F1) */
+#include <stdio.h>
+void insertion_sort(int a[],int n)
+{
+int i,j,index;
+int min;
+for(i = 1; i < n; i ++)
+{   index = i;
+    min = a[i];
+    for(j = i; j > 0 ; j--)
+        { if(a[j-1] > min)
+           {
+             a[j] = a[j -1];
+              index = j-1;
+            }
+          a[index] = min;
+         }
+ }
+}
+
+
+void main()
+{
+int a[100],i,n;
+printf("\n Enter the no.of elements:");
+scanf("%d",&n);
+printf("\n Enter the elements :");
+for(i = 0; i < n; i++)
+	scanf("%d",&a[i]);
+insertion_sort(a,n);
+printf("\n The elements in sorted order is :\n");
+for(i = 0; i < n; i++)
+	printf(" %d ",a[i]);
+}

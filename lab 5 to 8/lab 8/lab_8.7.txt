@@ -1,0 +1,11 @@
+/*Name:Bhonagiri sathvik, roll no:20311A1250
+ class:IT(F1) */
+#include<stdio.h>
+enum day{Mond,Tues};
+int main()
+ { typedef int y;
+    y x=10;
+    printf("%d\n",x);
+   printf("The value of enum day: %d\t%d\t",Mond,Tues);
+   return 0;
+}
