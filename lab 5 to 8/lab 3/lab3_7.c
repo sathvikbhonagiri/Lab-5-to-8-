@@ -1,4 +1,4 @@
-/*Name:Bhonagiri sathvik, roll no:20311A1250
+/*Name:M venkatramreddy, roll no:20311A1211
  class:IT(F1) */
 #include<stdio.h>
 int main()
